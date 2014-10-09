@@ -1,15 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadLights", "HeadLights\HeadLights.csproj", "{6F75A05F-065A-4BAD-AF78-558BF5A888E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Headlights.Micro", "Headlights.Micro\Headlights.Micro.csproj", "{7F57E276-E44E-4233-BBBC-70FC476C56A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadLights.iOS", "iOS\HeadLights.iOS.csproj", "{A304A0EE-FDCB-4861-BECA-6507BF28FF41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Headlights.Mobile.Core", "HeadLights.Mobile\Headlights.Mobile.Core.csproj", "{6F75A05F-065A-4BAD-AF78-558BF5A888E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadLights.Android", "Android\HeadLights.Android.csproj", "{215C3F10-FB71-455A-94AD-DDF4C4303D3E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MonkeyRobotics.Mobile.Core", "MonkeyRobotics.Mobile.Core", "{8B8513B5-C975-461B-BB17-B594A881B1BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotics.Mobile.Core", "..\Xamarin.Labs-Robotics\Source\Platform Stacks\Robotics.Mobile.Core\Robotics.Mobile.Core.csproj", "{65733427-B647-4556-A87C-20937496780A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotics.Mobile.Core", "..\..\..\Source\Platform Stacks\Robotics.Mobile.Core\Robotics.Mobile.Core.csproj", "{65733427-B647-4556-A87C-20937496780A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotics.Mobile.Core.iOS", "..\Xamarin.Labs-Robotics\Source\Platform Stacks\Robotics.Mobile.Core.iOS\Robotics.Mobile.Core.iOS.csproj", "{453394D3-F7E4-49E4-8FAE-36F1D988AE15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotics.Mobile.Core.Droid", "..\..\..\Source\Platform Stacks\Robotics.Mobile.Core.Droid\Robotics.Mobile.Core.Droid.csproj", "{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotics.Mobile.Core.iOS", "..\..\..\Source\Platform Stacks\Robotics.Mobile.Core.iOS\Robotics.Mobile.Core.iOS.csproj", "{453394D3-F7E4-49E4-8FAE-36F1D988AE15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadLights.Mobile.Android", "HeadLights.Mobile.Android\HeadLights.Mobile.Android.csproj", "{215C3F10-FB71-455A-94AD-DDF4C4303D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadLights.Mobile.iOS", "HeadLights.Mobile.iOS\HeadLights.Mobile.iOS.csproj", "{A304A0EE-FDCB-4861-BECA-6507BF28FF41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +29,22 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Release|iPhone.Build.0 = Release|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{215C3F10-FB71-455A-94AD-DDF4C4303D3E}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
 		{215C3F10-FB71-455A-94AD-DDF4C4303D3E}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
 		{215C3F10-FB71-455A-94AD-DDF4C4303D3E}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
@@ -39,10 +61,10 @@ Global
 		{215C3F10-FB71-455A-94AD-DDF4C4303D3E}.Release|iPhone.Build.0 = Release|Any CPU
 		{215C3F10-FB71-455A-94AD-DDF4C4303D3E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{215C3F10-FB71-455A-94AD-DDF4C4303D3E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
-		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
-		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.AppStore|iPhone.ActiveCfg = Release|Any CPU
-		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.AppStore|iPhone.Build.0 = Debug|Any CPU
 		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Debug|iPhone.ActiveCfg = Debug|Any CPU
@@ -55,10 +77,10 @@ Global
 		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Release|iPhone.Build.0 = Release|Any CPU
 		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{453394D3-F7E4-49E4-8FAE-36F1D988AE15}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{65733427-B647-4556-A87C-20937496780A}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
-		{65733427-B647-4556-A87C-20937496780A}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
-		{65733427-B647-4556-A87C-20937496780A}.AppStore|iPhone.ActiveCfg = Release|Any CPU
-		{65733427-B647-4556-A87C-20937496780A}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{65733427-B647-4556-A87C-20937496780A}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{65733427-B647-4556-A87C-20937496780A}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{65733427-B647-4556-A87C-20937496780A}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{65733427-B647-4556-A87C-20937496780A}.AppStore|iPhone.Build.0 = Debug|Any CPU
 		{65733427-B647-4556-A87C-20937496780A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{65733427-B647-4556-A87C-20937496780A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65733427-B647-4556-A87C-20937496780A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
@@ -87,6 +109,22 @@ Global
 		{6F75A05F-065A-4BAD-AF78-558BF5A888E2}.Release|iPhone.Build.0 = Release|Any CPU
 		{6F75A05F-065A-4BAD-AF78-558BF5A888E2}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{6F75A05F-065A-4BAD-AF78-558BF5A888E2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Release|iPhone.Build.0 = Release|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{7F57E276-E44E-4233-BBBC-70FC476C56A7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{A304A0EE-FDCB-4861-BECA-6507BF28FF41}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{A304A0EE-FDCB-4861-BECA-6507BF28FF41}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{A304A0EE-FDCB-4861-BECA-6507BF28FF41}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
@@ -104,7 +142,12 @@ Global
 		{A304A0EE-FDCB-4861-BECA-6507BF28FF41}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{A304A0EE-FDCB-4861-BECA-6507BF28FF41}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65733427-B647-4556-A87C-20937496780A} = {8B8513B5-C975-461B-BB17-B594A881B1BF}
+		{0040B1B9-6E22-438A-A6A7-A5A00B2B89B1} = {8B8513B5-C975-461B-BB17-B594A881B1BF}
+		{453394D3-F7E4-49E4-8FAE-36F1D988AE15} = {8B8513B5-C975-461B-BB17-B594A881B1BF}
+	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = iOS\HeadLights.iOS.csproj
+		StartupItem = Headlights.Micro\Headlights.Micro.csproj
 	EndGlobalSection
 EndGlobal
