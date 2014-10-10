@@ -30,8 +30,13 @@ namespace Robotics.Mobile.Robotroller
 			};
 
 			adapter.DeviceDisconnected += (sender, e) => {
+//				if (((Xamarin.Forms.NavigationProxy)Navigation).Inner == null)
+//					return;
 				// if device disconnects, return to main list screen
+				try{
 				Navigation.PopToRootAsync();
+				}catch{
+				}
 			};
 		}
 
@@ -135,6 +140,7 @@ namespace Robotics.Mobile.Robotroller
 			}
 		}
 
+
 		void BindGyro ()
 		{
 			UnbindGyro ();
@@ -170,19 +176,19 @@ namespace Robotics.Mobile.Robotroller
 						if (client == null)
 							return;
 
-						var speed = SpeedSlider.Value;
-
-						var speedVariable = client.Variables.FirstOrDefault (x => x.Name == "Speed");
-						if (speedVariable != null) {
-							speedVariable.Value = speed;
-						}
-
-						var turn = TurnSlider.Value - 1;
-
-						var turnVariable = client.Variables.FirstOrDefault (x => x.Name == "Turn");
-						if (turnVariable != null) {
-							turnVariable.Value = turn;
-						}
+//						var speed = SpeedSlider.Value;
+//
+//						var speedVariable = client.Variables.FirstOrDefault (x => x.Name == "Speed");
+//						if (speedVariable != null) {
+//							speedVariable.Value = speed;
+//						}
+//
+//						var turn = TurnSlider.Value - 1;
+//
+//						var turnVariable = client.Variables.FirstOrDefault (x => x.Name == "Turn");
+//						if (turnVariable != null) {
+//							turnVariable.Value = turn;
+//						}
 					},
 					CancellationToken.None,
 					TaskCreationOptions.None,
@@ -191,13 +197,77 @@ namespace Robotics.Mobile.Robotroller
 		}
 
 		public void OnCenterClicked (object sender, EventArgs e) {
-			TurnSlider.Value = 1;
+//			TurnSlider.Value = 1;
 		}
 
 		public void OnResetClicked (object sender, EventArgs e) {
-			SpeedSlider.Value = 0;
-			TurnSlider.Value = 1;
+//			SpeedSlider.Value = 0;
+//			TurnSlider.Value = 1;
 		}
+
+		public void OnPropertyChanged(object sender, EventArgs e){
+			var i = 32;
+		}
+
+		double _roll = 0;
+
+		double _pitch = 0;
+
+		public void OnGoClicked(object sender, EventArgs e){
+			if (BtnGo.Text == "Go") {
+				BtnGo.Text = "Stop";
+
+				_pitch = 0;
+
+				Task.Factory.StartNew (
+					() => {
+						if (client == null)
+							return;
+
+						var speed = Math.Cos (Math.Max (0, Math.Min (Math.PI / 2, _pitch)));
+						//						Debug.WriteLine ("Gyro.Pitch = " + g.Pitch + ", Speed = " + speed);
+
+							var turn = Math.Sin (Math.Max (-Math.PI / 2, Math.Min (Math.PI / 2, _roll)));
+						//						Debug.WriteLine ("Gyro.Roll = " + g.Roll + ", Turn = " + turn);
+
+						var speedVariable = client.Variables.FirstOrDefault (x => x.Name == "Speed");
+						if (speedVariable != null) {
+							speedVariable.Value = speed;
+						}
+
+						var turnVariable = client.Variables.FirstOrDefault (x => x.Name == "Turn");
+						if (turnVariable != null) {
+							turnVariable.Value = turn;
+						}
+
+						// let's show the values we're sending to the robot
+						Device.BeginInvokeOnMainThread(() => {
+							JoystickOutputSpeed.Text = String.Format("Speed: {0}", Math.Round(speed,2));
+							JoystickOutputTurn.Text = String.Format("Turn: {0}", Math.Round(turn,2));
+						});
+					},
+					CancellationToken.None,
+					TaskCreationOptions.None,
+					scheduler);
+
+			} else {
+				BtnGo.Text = "Go";
+				_pitch = 0;
+			}
+		}
+
+		public void OnForwardClicked(object sender, EventArgs e){
+			_pitch++;
+		}
+
+		public void OnLeftClicked(object sender, EventArgs e){
+			_roll = _roll - 0.1;
+		}
+
+		public void OnRightClicked(object sender, EventArgs e){
+			_roll = _roll + 0.1;
+		}
+
 
 		#endregion
 	}

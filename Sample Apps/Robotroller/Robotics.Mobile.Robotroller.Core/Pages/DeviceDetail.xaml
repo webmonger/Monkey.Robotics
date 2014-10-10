@@ -56,7 +56,8 @@
 
 	<ContentPage Title="Sliders" Icon="glyphish_09_arrows_out.png">
 		<StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" Padding="40,20,40,20">
-			<BoxView Color="Transparent" />
+<!--		<GestureRecognizer x:Name="MovementControl" PropertyChanged="OnPropertyChanged"	 />-->
+<!--			<BoxView Color="Transparent" />
 			<Label Text="Speed" />
 			<Slider Minimum="0" Maximum="1" x:Name="SpeedSlider" ValueChanged="OnSlidersChanged" />
 			<BoxView Color="Transparent"  />
@@ -64,7 +65,13 @@
 			<Slider Minimum="0" Maximum="2" Value="1" x:Name="TurnSlider" ValueChanged="OnSlidersChanged" />
 			<BoxView Color="Transparent" />
 			<Button Text="Center" Clicked="OnCenterClicked" VerticalOptions="EndAndExpand" />
-			<Button Text="Reset speed &amp; direction" Clicked="OnResetClicked" VerticalOptions="EndAndExpand" />
+			<Button Text="Reset speed &amp; direction" Clicked="OnResetClicked" VerticalOptions="EndAndExpand" />-->
+
+
+			<Button Text="Go" Clicked="OnGoClicked" x:Name="BtnGo" VerticalOptions="EndAndExpand" />
+			<Button Text="Forward" Clicked="OnForwardClicked" VerticalOptions="EndAndExpand" />
+			<Button Text="Left" Clicked="OnLeftClicked" VerticalOptions="EndAndExpand" />
+			<Button Text="Right" Clicked="OnRightClicked" VerticalOptions="EndAndExpand" />
 		</StackLayout>
 	</ContentPage>
 
