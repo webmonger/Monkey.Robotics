@@ -8,7 +8,7 @@ In this guide, we're going to go over the installation and requirements for sett
 
 While Xamarin.Robotics works with both .NET Microframework devices and other peripherals such as BLE enabled sensors, etc., if you want to take advantage of the .NET Microframework portions of the Xamarin.Robotics platform, you'll need either a [Netduino](http://netduino.com/) 2 or 2 Plus running the 4.3.1 firmware. Other Netduinos may work, but we've only tested on the Netduino 2 and 2 Plus.
 
-**Note that firware updates must be done on a Windows machine. There is currently no way to update the firmware from a Mac.**
+**Note that firmware updates must be done on a Windows machine. There is currently no way to update the firmware from a Mac.**
 
 **Firmware and Instructions:**
 
@@ -38,7 +38,7 @@ If you're running Windows, you'll need to:
 
  1. Install either Visual Studio 2012 or [Visual Studio 2012 Express](http://www.microsoft.com/en-us/download/details.aspx?id=34673).
  2. Install the [.NET Micro Framework SDK v4.3 QFE1](http://www.netduino.com/downloads/MicroFrameworkSDK_NETMF43_QFE1.msi).
- 3. Install the [Netduino SDK 4.3.1](http://www.netduino.com/downloads/MicroFrameworkSDK_NETMF43_QFE1.msi).
+ 3. Install the [Netduino SDK 4.3.1](http://www.netduino.com/downloads/netduinosdk_NETMF43.exe).
 
 **Note, if you want to use Visual Studio 2013, there is experimental support [here](http://forums.netduino.com/index.php?/topic/10201-experimental-visual-studio-2013-support/).**
 
