@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile.Core", "Mobile.Core", "{671419BD-1389-4B59-87C3-338F15D146C0}"
@@ -175,6 +175,6 @@ Global
 		{9146775A-E315-4CEB-9CB2-3DBFC9D9A58C} = {70D60FAE-6E12-4883-B30C-9616822B905B}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Robotics.Mobile.Robotroller.Droid\Robotics.Mobile.Robotroller.Droid.csproj
+		StartupItem = Robotics.Micro.Core.Netduino2Tests\Robotics.Micro.Robotroller.Netduino.csproj
 	EndGlobalSection
 EndGlobal
